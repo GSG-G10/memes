@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper{
+background-color: rebeccapurple;
+width: 100vw;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+img{
+  height: 300px;
+}
+
+.reload_img{
+  margin-top: 30px;
+}
+
+.reload_img svg{
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+  cursor: pointer;
+}
