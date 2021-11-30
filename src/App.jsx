@@ -8,9 +8,10 @@ function App() {
   useEffect(() => {
     axios
       .get(
-        "http://api.giphy.com/v1/gifs/random?api_key=uTbPKn6KPBJqplAZk1ijeqdMkaGC8umE"
+        "https://api.giphy.com/v1/gifs/random?api_key=uTbPKn6KPBJqplAZk1ijeqdMkaGC8umE"
       )
       .then((res) => {
+        console.log(res.data.data.images.original.url);
         setData(res.data.data.images.original.url);
       });
   }, [reload]);
